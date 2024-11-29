@@ -95,7 +95,7 @@ router.post('/login', [
         const theUser = await UserSchema.findOne({ email: req.body.email }); // <-- Change req.body.username to req.body.name
             // console.log('my',theUser.name);
         // req.session.name=theUser.name
-        req.session.email = req.body.email; // <-- Change req.body.username to req.body.name
+        req.session.email = req.body.username; // <-- Change req.body.username to req.body.name
         console.log(req.session.email);
         // console.log(req.session.name);
         if (theUser) {

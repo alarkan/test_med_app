@@ -7,7 +7,8 @@ import Login from './components/Login/Login';
 import InstantConsultation from './components/InstantConsultation/InstantConsultation'; 
 import Notification from './components/Notification/Notification';
 import ReviewForm from './components/ReviewForm/ReviewForm';
-
+import ProfileCard from './components/ProfileCard/ProfileCard';
+import ReportsLayout from './components/ReportsLayout/ReportsLayout';
 
 function App() {
 
@@ -21,6 +22,8 @@ function App() {
 					<Route path="login" element={<Login/>}/>
 					<Route path="reviews" element={<ReviewForm/>}/>
 					<Route path="/instant-consultation" element={<InstantConsultation />} />
+					<Route path="/profile" element={<ProfileCard />} />
+					<Route path="/reports" element={<ReportsLayout />} />
 					<Route path="*" element={<h1>404 Page Not Found</h1>}/>
 				</Routes>
 				</Notification>
